@@ -1,0 +1,25 @@
+.tabs {
+  display: flex;
+  width: 110%;
+  flex-wrap: nowrap;
+  :first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  :last-child {
+    border-radius: 0 5px 5px 0;
+  }
+
+  button {
+    font-size: 16px;
+    background: #FFFFFF;
+    flex: 0 0 34%;
+    height: 50px;
+    border: 1px solid #DFE5EC;
+    cursor: pointer;
+  }
+
+  .active {
+    color: #FFFFFF;
+    background: #2196F3;
+  }
+}

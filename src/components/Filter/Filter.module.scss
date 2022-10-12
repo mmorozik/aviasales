@@ -1,0 +1,59 @@
+$mb-10: 10px;
+$mb-20: 20px;
+
+.filter {
+  height: 170px;
+  width: 252px;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: $mb-20;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  span {
+    font-family: 'Open Sans';
+    font-style: normal;
+  }
+
+  .title {
+    margin-bottom: $mb-20;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #4A4A4A;
+  }
+
+  label {
+    margin-bottom: $mb-10;
+    cursor: pointer;
+    padding-left: 20px;
+
+    .input {
+      position: absolute;
+      appearance: none;
+    }
+
+    .input:checked + .checkbox {
+      background-image: url(../img/Checkbox_checked.svg);
+    }
+
+    .checkbox {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      margin-left: -20px;
+      background-image: url(../img/Checkbox.svg);
+    }
+
+    span {
+      margin-left: 10px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      color: #4A4A4A;
+    }
+  }
+}

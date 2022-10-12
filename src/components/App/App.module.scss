@@ -1,0 +1,45 @@
+.app {
+  padding: 0 8%;
+
+  .logo {
+    display: block;
+    margin: 25px auto;
+  }
+
+  .wrapper {
+    display: flex;
+    width: 80%;
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+  }
+
+  .main {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .show-button {
+    width: 110%;
+    height: 50px;
+    background: #2196F3;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+    span {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding: 26px 20px;
+    }
+  }
+}
